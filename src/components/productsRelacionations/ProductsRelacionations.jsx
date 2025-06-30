@@ -33,9 +33,10 @@ const Card = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease-in-out;
     cursor:point;
+    height: 100%;
 
     &:hover {
         transform: translateY(-5px);
@@ -76,7 +77,7 @@ const DescriptionCard = styled.p`
 const Btn = styled.button`
     padding: .6rem 1.5rem;
     color: white;
-    background: orange;
+    background: var(--primary);
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -88,7 +89,8 @@ const Btn = styled.button`
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: darkorange;
+        opacity:.8;
+        transition: .3s all;
     }
 `;
 

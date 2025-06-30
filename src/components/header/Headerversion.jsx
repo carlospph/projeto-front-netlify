@@ -31,7 +31,9 @@ export const Headerversion = () => {
                 {search && (
                     <div className="field">
                         <input type="text" placeholder="Buscar produtos" />
-                        <i className="fa-solid fa-search"></i>
+                        <button className='btn-input-search'>
+                            <i className="fa-solid fa-search"></i>
+                        </button>
                     </div>
                 )}
 

@@ -16,6 +16,9 @@ export const MobileMenu = () => {
                 <NavLink className="link" to="/Categorias">Categorias</NavLink>
             </li>
             <li>
+                <NavLink className="link" to="/MeusPedidos">Meus pedidos</NavLink>
+            </li>
+            <li>
              <ActionUser/>
             </li>
         </ul> 

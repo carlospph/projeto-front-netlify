@@ -1,85 +1,107 @@
-header{
-	box-shadow: 0 2px 2px 2px rgb(0,0,0,0.1);
+header {
+	box-shadow: 0 2px 2px 2px rgb(0, 0, 0, 0.1);
 	padding: .5rem;
 	position: fixed;
 	width: 100%;
 	background: white;
 	z-index: 5;
 
-		@media (min-width: 769px){
-			padding: 1rem;
-		}
+	@media (min-width: 769px) {
+		padding: 1rem;
+	}
 }
 
-.header-container{
+.header-container {
 	display: grid;
 	grid-template-columns: 250px 3fr 2fr 40px;
 
 	grid-template-areas: 'logo field actions carrinho'
-	'containerMenu containerMenu containerMenu containerMenu';
+		'containerMenu containerMenu containerMenu containerMenu';
 	align-items: center;
-	gap:18px;
+	gap: 18px;
 	margin: 0 auto;
 	max-width: 1200px;
 	padding: 0 1rem;
 
-		@media (max-width: 769px){
-			grid-template-columns: 60px 3fr 2fr 40px;
-			padding: .5rem;
+	@media (max-width: 769px) {
+		grid-template-columns: 60px 3fr 2fr 40px;
+		padding: .5rem;
 
-			& .field{
-				grid-column: 1/-1;
-			} 
+		& .field {
+			grid-column: 1/-1;
+			border: 1px solid #ccc;
+			padding: 4px 0;
+			height: 45px;
+			overflow: hidden;
 		}
+
+		& input {
+			border: 1px red solid;
+			padding: 0px 0 0 5px;
+			margin: 0;
+		}
+
+		& button {
+			padding: 0 .6rem;
+			border: 0;
+			border-left: 1px solid #ccc;
+		}
+	}
 }
 
-.logo{
+.logo {
 	grid-area: logo;
 	width: 180px;
 
-		@media (min-width: 769px){
-			width: 220px;
-		}
- }
+	@media (min-width: 769px) {
+		width: 220px;
+	}
+}
 
- .hamburguer{
+.hamburguer {
 	grid-area: hamburguer;
-	 font-size: 2rem;
-	 display: none;
- }
+	font-size: 2rem;
+	display: none;
+}
 
- .field, .field-computer{
-	border:1px solid rgb(194, 175, 175);
-	display:flex;
+.field,
+.field-computer {
+	border: 1px solid rgb(194, 175, 175);
+	display: flex;
 	align-items: center;
 	grid-area: field;
 	border-radius: 6px;
 	padding: 0 1rem;
- }
+}
 
- .field{
+.field {
 	margin-top: 1.5rem;
-	width: 100%; 
+	width: 100%;
 	display: none;
 
-		@media (max-width: 769px){
- 			grid-area:field;
-			grid-column: 1/-1;
-		}
-  }
+	@media (max-width: 769px) {
+		grid-area: field;
+		grid-column: 1/-1;
+	}
 
- .field input, .field-computer input{
+	.btn-input-search {
+		height: 45px;
+	}
+}
+
+.field input,
+.field-computer input {
 	outline: none;
-	border:0;
+	border: 0;
 	outline: none;
- }
+}
 
- .actions{
- 	grid-area: actions;
- }
+.actions {
+	grid-area: actions;
+}
 
- .carrinho{
- 	grid-area:carrinho;
+.carrinho {
+	grid-area: carrinho;
 	justify-content: center;
 	display: flex;
 	align-items: center;
@@ -87,34 +109,34 @@ header{
 	font-size: 1.9rem;
 	color: var(--primary);
 	cursor: pointer;
- }
+}
 
- .container-menu{
- 	grid-area: containerMenu;
+.container-menu {
+	grid-area: containerMenu;
 	max-width: 1200px;
 	margin: 0 auto;
- }
+}
 
- .menu{
-		padding: 0;
-		margin: 0;
-		display: flex;
-		gap:1.5rem;
-	}
+.menu {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 1.5rem;
+}
 
- .btnSearch{
+.btnSearch {
 	color: gray;
-	cursor:pointer;
+	cursor: pointer;
 	grid-area: btnSearch;
 	display: none;
- }
+}
 
- .onlyComputer{
+.onlyComputer {
 	display: block;
- }
+}
 
-.desktop-menu{
- 	display: flex;
+.desktop-menu {
+	display: flex;
 	gap: 1.6rem;
 	grid-column: 1/-1;
 	width: 500px;
@@ -122,89 +144,87 @@ header{
 	padding: 0;
 }
 
-.desktop-menu a{
+.desktop-menu a {
 	padding: .4rem;
 }
 
-a.active{
+a.active {
 	border-bottom: 3px var(--primary) solid;
 }
- .onlyMobile{
+
+.onlyMobile {
 	display: none;
 	margin: 0;
 	padding: 0;
- }
+}
 
- @media (max-width: 769px){
+@media (max-width: 769px) {
 
-	.header-container{
+	.header-container {
 		display: grid;
 		grid-template-areas: 'field field field field fiedl'
-		'hamburguer logo logo btnSearch carrinho' 
-		'containerMenu containerMenu containerMenu containerMenu containerMenu';
+			'hamburguer logo logo btnSearch carrinho'
+			'containerMenu containerMenu containerMenu containerMenu containerMenu';
 		padding: 0 1rem;
 	}
 
-	.field{
+	.field {
 		display: flex;
 		grid-area: field;
 	}
 
-	.hamburguer{
+	.hamburguer {
 		display: block;
 		grid-area: hamburguer;
 		cursor: pointer;
 	}
 
-	.btnSearch{
-	color: gray;
-	cursor:pointer;
-	grid-area: btnSearch;
-	display: block;
-	font-size: 1.5em;
- }
+	.btnSearch {
+		color: gray;
+		cursor: pointer;
+		grid-area: btnSearch;
+		display: block;
+		font-size: 1.5em;
+	}
 
-	.actions{
+	.actions {
 		display: none;
 	}
 
-	.menu{
+	.menu {
 		padding: 0 1rem;
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		gap:.8rem;
+		gap: .8rem;
 	}
 
-	.field-computer{
+	.field-computer {
 		display: none;
 	}
 
-	.onlyComputer{
+	.onlyComputer {
 		display: none;
 	}
 
-	.onlyMobile{
+	.onlyMobile {
 		display: block;
 	}
 
-	.mobile-menu{
+	.mobile-menu {
 		min-height: 100vh;
 	}
 
-	ul.mobile-menu{
+	ul.mobile-menu {
 		margin: 0 0 0 1rem;
 		padding: 0;
 	}
 
-	.mobile-menu a{
- 		padding: .4rem 0;
+	.mobile-menu a {
+		padding: .4rem 0;
 		margin: .4rem 0;
 		display: block;
 		width: fit-content;
 	}
-	
- }
 
-
- 
+}

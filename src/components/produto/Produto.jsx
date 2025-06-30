@@ -24,8 +24,8 @@ const Container = styled.div`
 
 const ContainerIlustration = styled.div``;
 
-const Ilustration = styled.div`
-  box-shadow: 0 2px 2px 2px #f2f2f2;
+const Ilustration = styled.div` 
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   height: 480px;
   width: 100%;
@@ -207,7 +207,7 @@ export const Produto = () => {
     return (
       <Layout>
         <h2>Produto não localizado.</h2>
-        <p>Verifique o ID do produto ou se ele existe na sua lista de dados.</p>
+        <p>Verifique não existe na lista de dados.</p>
       </Layout>
     );
   }

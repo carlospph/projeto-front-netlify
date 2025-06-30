@@ -14,6 +14,9 @@ export const DesktopMenu = () => {
             <li>
                 <NavLink className="link" to="/Categorias">Categorias</NavLink>
             </li>
+            <li>
+                <NavLink className="link" to="/MeusPedidos">Meus pedidos</NavLink>
+            </li>
         </ul> 
     )
   }
