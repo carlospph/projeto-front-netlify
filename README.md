@@ -1,6 +1,6 @@
 ### Aplicação feita em REACT
 
-# React + Vite 
+# React + Vite  
 
 ## OBJETIVO
 
