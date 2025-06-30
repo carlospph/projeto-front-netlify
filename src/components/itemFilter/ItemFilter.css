@@ -1,0 +1,23 @@
+ 
+.dflex-check{
+    padding: 04px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap:3px;
+ }
+
+.label-filter{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="checkbox"]{
+    width: 30px;
+    border: 3px solid red;
+    padding: .4rem;
+}
+

@@ -1,0 +1,132 @@
+.container__page__filter {
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.sidebar {
+  width: 100%;
+  box-shadow: 0 2px 2px 2px #ccc;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+h3.titleFilter {
+  padding: 2rem 0 0.4rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.548);
+  width: fit-content;
+}
+
+h4.titleFilter {
+  margin: 1.6rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkbox {
+  display: block;
+  width: 1.2em;
+  margin-top: 10px;
+  height: 26px;
+  border: 0;
+  width: 26px;
+}
+
+.container__cards,
+.container__cards__filter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.btnFilter {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 0 1rem 0;
+  padding: 0.3rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 2px #ccc;
+}
+
+/* Breakpoint 769px */
+@media (min-width: 769px) {
+  .container__page__filter {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container__cards {
+    max-width: 640px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .container__cards__filter {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .btnFilter {
+    display: none;
+  }
+
+  .sidebar {
+    max-width: 220px;
+    margin-top: 0;
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+}
+
+/* Breakpoint 993px */
+@media (min-width: 993px) {
+  .container__page__filter {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .container__cards {
+    max-width: 1190px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container__cards__filter {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Breakpoint 1200px */
+@media (min-width: 1200px) {
+  .container__page__filter {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    max-width: 300px;
+    padding: 0 2em;
+  }
+
+  .container__cards {
+    max-width: 1440px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Esconde a sidebar em telas menores */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

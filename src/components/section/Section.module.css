@@ -1,0 +1,52 @@
+.container__custom{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.collection__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap:1rem;
+}
+
+.collection__container .card__collection{
+	position: relative;
+	overflow: hidden;
+	border-radius:5px;
+}
+
+.img__collection{
+	overflow:hidden;
+	border-radius:6px;
+}
+
+.btn__collection{
+	position:absolute;
+	bottom: .5em;
+	padding: .5rem 1.4rem;
+	margin-left:1rem;
+	border-radius:6px;
+	border:0;
+	background: #ccc;
+	color:#C92071;
+}
+
+.btn__collection:hover{
+	color: #C92071;
+	transition: .5s;
+	cursor: pointer;
+	opacity: .8;
+}
+
+.price__desc{
+	border-radius: 29px;
+	background: #E7FF86;
+	font-size: 14px;
+	font-weight:700px;
+	position: absolute;
+	padding: 5px 15px;
+	left:1rem;
+	top:.6rem;
+}

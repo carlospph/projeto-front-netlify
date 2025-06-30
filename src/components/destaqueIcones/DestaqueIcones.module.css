@@ -1,0 +1,48 @@
+ .destaqueIcones{
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 gap: 1rem;
+ 	 text-align:center;
+	 padding: 1rem;
+ }
+
+.card__icone{
+	border: 3px solid #ccc;
+	background-color: white;
+	padding: 1rem;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	cursor:pointer;
+	opacity: .8;
+}
+
+.card__icone:hover{
+	transform: scale(1.1);
+	transition: all .3s;
+	opacity: 1;
+	border: 3px solid #C92071;
+}
+
+.card__title{
+	font-size: var(--font-14);
+	margin-top: .4rem;
+	transition: all .3s;
+}
+
+.card__img{
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+}
+
+@media (min-width: 569px){
+	.destaqueIcones{
+		display:flex;
+		flex-direction: row;
+		max-width: 669px;
+		margin: 0 auto;
+		}
+}
+

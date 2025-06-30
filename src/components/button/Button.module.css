@@ -1,0 +1,20 @@
+:root{
+	--color-primary: #C92071;
+	--color-white: #fff;
+}
+.btn{
+	background: var(--color-primary);
+	color: var(--color-white);
+	border: 0;
+	border-radius: 6px;
+	height: 48px;
+	padding: 0 1.5rem;
+display:flex;
+align-items:center;
+justify-content:center;
+	margin-top: 1rem;
+}
+
+.btn:hover{
+	opacity: .8;
+}

@@ -1,0 +1,46 @@
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.6rem;
+ }
+
+ .row ul{
+    padding: 0;
+ }
+
+.phoneWhatsapp a{
+    color: var(--color-white);
+}
+
+.copyRight{
+    text-align: center;
+}
+
+    .logo__bottom{
+        width: 220px;
+         margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .socialMedia{
+        display: flex;
+        gap:1.1rem;
+        margin-top: 1rem;
+
+            & i{
+                font-size: 1.5rem;
+            }
+    }
+
+
+@media screen and (min-width: 320px) and (max-width: 769px){
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:1rem;
+    }
+
+    .footer__lema, .footer__contact{
+        grid-column: 1/-1;
+    }
+}

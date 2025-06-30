@@ -1,0 +1,42 @@
+[
+    {
+   " id": 1,
+   "titulo": "Tenis",
+   "categoria":  "Casual",
+   "description": "Para os exigentes no dia a dia",
+   "priceOld":"R$ 299,00",
+   "priceAtual": "R$ 219,00",
+   "src":"https://images.pexels.com/photos/346804/pexels-photo-346804.jpeg?auto=compress&cs=tinysrgb&w=600"
+}, 
+
+{
+   " id": 2,
+   "titulo": "Tenis",
+   "categoria":  "Esporte",
+   "description": "Para os facinantes das atividades físicas",
+   "priceOld":"R$ 499,00",
+   "priceAtual": "R$ 309,00",
+   "src":"sem"
+}, 
+
+{
+   " id": 3,
+   "titulo": "Camiseta",
+   "categoria":  "Casual",
+   "description": "Para gostam de se ventir confortável",
+   "priceOld":"R$ 199,00",
+   "priceAtual": "R$ 149,90",
+   "src":"sem"
+}, 
+
+{
+   " id": 4,
+   "titulo": "Camiseta",
+   "categoria":  "Tshirt",
+   "description": "Quando se quer um modelo adequado ao corpo",
+   "priceOld":"R$ 299,00",
+   "priceAtual": "R$ 219,00",
+   "src":"sem"
+}
+
+]

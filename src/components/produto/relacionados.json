@@ -1,0 +1,43 @@
+ [
+      {
+        "id": "prod1001",
+        "nome": "TênisUrbano Estiloso",
+        "descricao": "Perfeito para quem busca um visual moderno e o máximo conforto para o dia a dia na cidade.",
+        "imagem": "/tenis1.png",
+        "categoria": "Urbano",
+        "marca": "SportStyle",
+        "preco": 299.90,
+        "disponivel": true
+      },
+      {
+        "id":  "prod1002",
+        "nome": "Tênis de Corrida Leve",
+        "descricao": "Desenvolvido para alta performance, este tênis oferece leveza e amortecimento superior para suas corridas.",
+        "imagem": "/tenis2.png",
+        "categoria": "Corrida",
+        "marca": "RunFast",
+        "preco": 459.90,
+        "disponivel": true
+      },
+      {
+        "id": "prod1005",
+        "nome": "Relógio",
+        "descricao": "Um ícone de estilo, ideal para combinar com qualquer look e garantir conforto em todas as ocasiões.",
+        "imagem": "/relogio__feminino.jpg",
+        "categoria": "Casual",
+        "marca": "ClassicWear",
+        "preco": 199.90,
+        "disponivel": true
+      },
+      {
+        "id":  "prod1007",
+        "nome": "Camisa básica",
+        "descricao": "Construída para trilhar e atividades ao ar livre, oferece atração e durabilidade em qualquer ares.",
+        "imagem": "/tshirt2.png",
+        "categoria": "Aventura",
+        "marca": "TrailMaster",
+        "preco": 389.90,
+        "disponivel": true
+      }
+    ]
+ 
