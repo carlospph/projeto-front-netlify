@@ -46,7 +46,7 @@ const Card = styled.div`
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-bottom:3px solid #ccc;
+        border-bottom:1px solid #ccc;
     }
 `;
 

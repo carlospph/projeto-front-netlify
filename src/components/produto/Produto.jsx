@@ -13,7 +13,7 @@ const Container = styled.div`
   padding: 1.5rem 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 auto;
   max-width: 1200px;
 
@@ -25,7 +25,7 @@ const Container = styled.div`
 const ContainerIlustration = styled.div``;
 
 const Ilustration = styled.div`
-  box-shadow: 0 0px 20px 0px #f2f2f2;
+  box-shadow: 0 0px 8px 0px #00000050;
   border-radius: 5px;
   height: 480px;
   width: 100%;
@@ -42,13 +42,13 @@ const Thumbnails = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  margin: 1rem;
-
+  margin: 1rem 0;
+ 
   & img {
     width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border: 2px solid green;
+    height: 88px;
+    object-fit: contain;
+    border: 2px solid #eeeeed;
     border-radius: 6px;
     padding: 5px;
     cursor: pointer;
@@ -56,6 +56,8 @@ const Thumbnails = styled.div`
   }
 
   & img:hover {
+    transition: 0.3s ease-in-out;
+    border: 2px solid var(--primary);
     transition: 0.3s ease-in-out;
   }
 `;
@@ -163,6 +165,7 @@ const ContainerAdd = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding:4px 0 0 0;
 `;
 
 const Dflex = styled.div`
@@ -222,10 +225,11 @@ const BtnColor = styled.button`
 const Buy = styled.button`
   border: 0;
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 35px;
   background-color: var(--primary);
   color: var(--white);
   cursor: pointer;
+  margin-top: 20px;
 `;
 
 export const Produto = () => {
@@ -316,7 +320,7 @@ export const Produto = () => {
             </Sizes>
 
             <ContainerAdd>
-              <Titulo labelTitle="Cores" />
+              <Titulo labelTitle="Cores"/>
               <Colores>
                 {produto.colors.map((color) => {
                   return (
