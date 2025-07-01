@@ -9,7 +9,7 @@
         "oldPrice": "R$ 200,00",
         "price": "R$ 140,00",
         "sizes": ["36", "37", "38", "39", "40"],
-        "colors": ["Preto", "Branco"],
+        "colors": ["1", "2", "3", "4", "5"],
         "fotosAdd": ["/tenis2.png", "/tenis1.png", "/tenis3.png"]
     },
     {
@@ -22,7 +22,7 @@
         "oldPrice": "R$ 180,00",
         "price": "R$ 135,00",
         "sizes": ["37", "38", "39", "40", "41"],
-        "colors": ["Preto", "Rosa", "Branco"],
+        "colors": ["preto", "cinza", "branco", "azul", "red"],
         "fotosAdd": ["/tenis1.png", "/tenis2.png", "/tenis3.png"]
     },
     {
@@ -35,7 +35,7 @@
         "price": "R$ 170,99",
         "discount": "20% off",
         "sizes": ["Padrão"],
-        "colors": ["Preto", "Branco"],
+        "colors": ["Preto", "Branco", "Cinza"],
         "fotosAdd": ["/fone2.jpg", "/fonede.png", "/fone3.jpg"]
     },
     {
@@ -47,7 +47,7 @@
         "oldPrice": "R$ 190,00",
         "price": "R$ 150,00",
         "sizes": ["P", "M", "G", "GG"],
-        "colors": ["Azul", "Preto"],
+        "colors": ["preto", "cinza", "branco", "azul", "red"],
         "fotosAdd": ["/calca1.png", "/calca2.png", "/calca3.jpg"]
     },
     {
@@ -59,7 +59,7 @@
         "oldPrice": "R$ 470,00",
         "price": "R$ 345,00",
         "sizes": ["Juvenil", "Adulto"],
-        "colors": ["Dourado", "Prata"],
+        "colors": ["Preto", "Branco", "Cinza"],
         "fotosAdd": ["/relogio__feminino.jpg", "/relogio__feminino2.jpg", "/relogio__feminino3.jpg"]
     },
     {
@@ -71,7 +71,7 @@
         "oldPrice": "R$ 210,00",
         "price": "R$ 190,00",
         "sizes": ["36", "37", "38", "39", "40"],
-        "colors": ["Preto"],
+        "colors": ["preto", "cinza", "branco", "azul", "red"],
         "fotosAdd": ["/tshirt1.png", "/camisa2.jpg", "/camisa3.jpg"]
     },
     {
@@ -83,7 +83,7 @@
         "oldPrice": "R$ 350,00",
         "price": "R$ 320,00",
         "sizes": ["P", "M", "G"],
-        "colors": ["Branco", "Preto", "Verde"],
+        "colors": ["preto", "cinza", "branco", "azul", "blue"],
         "fotosAdd": ["/tshirt1.png", "/camisafem2.jpg", "/camisafem3.jpg"]
     },
     {
@@ -95,7 +95,7 @@
         "oldPrice": "R$ 240,00",
         "price": "R$ 200,00",
         "sizes": ["Único"],
-        "colors": ["Preto", "Prata"],
+        "colors": ["Preto", "Branco", "Cinza"],
         "fotosAdd": ["/relogio2.jpg", "/relogio_masculino.png", "/relogio3.jpg"]
     }
 ]

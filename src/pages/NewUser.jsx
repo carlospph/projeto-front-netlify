@@ -17,13 +17,7 @@ export const NewUser = () => {
 
          <Layout>
             <Container>
-                <Section 
-                    title="Cadastro de usuário"
-                    alinhamento="text-center"
-                    size="fontStyle"
-                >
-                </Section>
-
+                 
                 <FormCadastro/>
 
             </Container>

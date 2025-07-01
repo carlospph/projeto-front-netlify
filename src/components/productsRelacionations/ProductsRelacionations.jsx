@@ -9,7 +9,7 @@ const Container = styled.div`
     gap: 1.5rem;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 0;
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
@@ -46,6 +46,7 @@ const Card = styled.div`
         width: 100%;
         height: 200px;
         object-fit: cover;
+        border-bottom:3px solid #ccc;
     }
 `;
 
@@ -114,7 +115,7 @@ export function ProductsRelacionations() {
                             <TitleCard>{item.nome}</TitleCard>
                             <DescriptionCard>{item.descricao}</DescriptionCard>
                         </BodyCard>
-                        <div><Btn>Comprar</Btn></div>
+                        <Btn>Comprar</Btn>
                     </Card>
                     </Link>
                 ))}

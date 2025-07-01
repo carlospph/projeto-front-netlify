@@ -24,8 +24,8 @@ const Container = styled.div`
 
 const ContainerIlustration = styled.div``;
 
-const Ilustration = styled.div` 
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+const Ilustration = styled.div`
+  box-shadow: 0 0px 20px 0px #f2f2f2;
   border-radius: 5px;
   height: 480px;
   width: 100%;
@@ -56,7 +56,6 @@ const Thumbnails = styled.div`
   }
 
   & img:hover {
-    border: 2px solid red;
     transition: 0.3s ease-in-out;
   }
 `;
@@ -172,6 +171,48 @@ const Dflex = styled.div`
   justify-content: start;
 `;
 
+const Colores = styled.ul` 
+  display:flex;
+  gap:1rem;
+  padding:0;
+  margin:0;
+
+  & li{
+  color:transparent;
+      border:1px solid gray;
+   background:rgb(16,16,96);
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    transition: .3s all;
+  }
+
+  & li:hover {
+  border:2px solid pink;
+  cursor:pointer;
+  transition:.3s all;
+}
+
+  & li:nth-child(1){
+    background:black;
+  }
+
+   & li:nth-child(2){
+    background:#ccc;
+  }
+
+     & li:nth-child(3){
+    background:white;
+  }
+
+   & li:nth-child(4){
+     background:brown;
+  }
+
+     & li:nth-child(5){
+    }
+`;
+
 const BtnColor = styled.button`
   border-radius: 5px;
   border: 0;
@@ -207,7 +248,7 @@ export const Produto = () => {
     return (
       <Layout>
         <h2>Produto não localizado.</h2>
-        <p>Verifique não existe na lista de dados.</p>
+        <p>Verifique o ID do produto ou se ele existe na sua lista de dados.</p>
       </Layout>
     );
   }
@@ -276,25 +317,23 @@ export const Produto = () => {
 
             <ContainerAdd>
               <Titulo labelTitle="Cores" />
-              <Dflex>
+              <Colores>
                 {produto.colors.map((color) => {
                   return (
-                    <BtnColor key={color}>
-                      <div style={{ backgroundColor: color }}>{color}</div>
-                    </BtnColor>
+                    <li key={color}> {color} </li>
                   );
                 })}
-              </Dflex>
+              </Colores>
             </ContainerAdd>
 
             <ContainerAdd>
               <Buy>Comprar</Buy>
             </ContainerAdd>
-          </Datas> 
+          </Datas>
         </Container>
 
-        <ProductsRelacionations/>
-        
+        <ProductsRelacionations />
+
       </Layout>
     </>
   );

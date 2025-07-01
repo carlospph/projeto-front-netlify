@@ -31,7 +31,7 @@ const FormCadastro = () => {
 
       <form action="" onSubmit={handleClickValidateFormulario}>
         <div className="container__form--fields">
-          <h3 className="title__section">Dados para a conta</h3>
+          <h3 className="title__section">Cadastro de usuário</h3>
           <label htmlFor="nome">Nome</label>
           <input
             type="text"
